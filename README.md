@@ -225,14 +225,22 @@ flowchart LR
     J -->|Yes| K[High Priority<br/>Alert]
     J -->|No| L[Low Priority]
     
-    style A fill:#E1F5FE,stroke:#01579B,stroke-width:2px
-    style B fill:#FFF9C4,stroke:#F57F17,stroke-width:2px
-    style D fill:#F8BBD0,stroke:#880E4F,stroke-width:2px
-    style F fill:#FFCCBC,stroke:#BF360C,stroke-width:2px
-    style G fill:#C5E1A5,stroke:#33691E,stroke-width:2px
-    style H fill:#B2DFDB,stroke:#004D40,stroke-width:2px
-    style K fill:#FF5252,stroke:#B71C1C,stroke-width:3px,color:#fff
-    style L fill:#81C784,stroke:#1B5E20,stroke-width:2px
+    style A fill:#0D47A1,stroke:#01579B,stroke-width:2px,color:#fff
+    style B fill:#F57F17,stroke:#E65100,stroke-width:2px,color:#fff
+    style C fill:#1565C0,stroke:#0D47A1,stroke-width:2px,color:#fff
+    style D fill:#AD1457,stroke:#880E4F,stroke-width:2px,color:#fff
+    style E1 fill:#5E35B1,stroke:#4527A0,stroke-width:2px,color:#fff
+    style E2 fill:#5E35B1,stroke:#4527A0,stroke-width:2px,color:#fff
+    style E3 fill:#5E35B1,stroke:#4527A0,stroke-width:2px,color:#fff
+    style E4 fill:#5E35B1,stroke:#4527A0,stroke-width:2px,color:#fff
+    style E5 fill:#5E35B1,stroke:#4527A0,stroke-width:2px,color:#fff
+    style F fill:#D84315,stroke:#BF360C,stroke-width:2px,color:#fff
+    style G fill:#558B2F,stroke:#33691E,stroke-width:2px,color:#fff
+    style H fill:#00695C,stroke:#004D40,stroke-width:2px,color:#fff
+    style I fill:#00838F,stroke:#006064,stroke-width:2px,color:#fff
+    style J fill:#EF6C00,stroke:#E65100,stroke-width:2px,color:#fff
+    style K fill:#C62828,stroke:#B71C1C,stroke-width:3px,color:#fff
+    style L fill:#2E7D32,stroke:#1B5E20,stroke-width:2px,color:#fff
 ```
 
 ### 🎯 Detection Heuristics
@@ -253,13 +261,13 @@ graph LR
     
     A -.->|Total: 1.7 ETH<br/>5 txs in 3 days| C[⚠️ ALERT:<br/>Structuring]
     
-    style A fill:#FF6B6B,stroke:#C92A2A,stroke-width:3px,color:#fff
-    style C fill:#FFA94D,stroke:#E8590C,stroke-width:3px,color:#000
-    style B1 fill:#FFD93D,stroke:#F59F00
-    style B2 fill:#FFD93D,stroke:#F59F00
-    style B3 fill:#FFD93D,stroke:#F59F00
-    style B4 fill:#FFD93D,stroke:#F59F00
-    style B5 fill:#FFD93D,stroke:#F59F00
+    style A fill:#D32F2F,stroke:#B71C1C,stroke-width:3px,color:#fff
+    style C fill:#EF6C00,stroke:#E65100,stroke-width:3px,color:#fff
+    style B1 fill:#F57F17,stroke:#E65100,stroke-width:2px,color:#fff
+    style B2 fill:#F57F17,stroke:#E65100,stroke-width:2px,color:#fff
+    style B3 fill:#F57F17,stroke:#E65100,stroke-width:2px,color:#fff
+    style B4 fill:#F57F17,stroke:#E65100,stroke-width:2px,color:#fff
+    style B5 fill:#F57F17,stroke:#E65100,stroke-width:2px,color:#fff
 ```
 
 **Threshold:** 5+ transactions < 0.5 ETH within 3 days
@@ -284,12 +292,15 @@ graph LR
     
     E -.->|Pattern Found| F[⚠️ ALERT:<br/>Peel Chain]
     
-    style A fill:#4ECDC4,stroke:#006D77,stroke-width:2px,color:#000
-    style B fill:#95E1D3,stroke:#006D77,stroke-width:2px
-    style C fill:#C9F4AA,stroke:#52B788,stroke-width:2px
-    style D fill:#F9E79F,stroke:#F1C40F,stroke-width:2px
-    style E fill:#FAD4C0,stroke:#E67E22,stroke-width:2px
-    style F fill:#FF6B9D,stroke:#C9184A,stroke-width:3px,color:#fff
+    style A fill:#00838F,stroke:#006064,stroke-width:2px,color:#fff
+    style B fill:#00ACC1,stroke:#00838F,stroke-width:2px,color:#fff
+    style C fill:#43A047,stroke:#2E7D32,stroke-width:2px,color:#fff
+    style D fill:#F9A825,stroke:#F57F17,stroke-width:2px,color:#000
+    style E fill:#EF6C00,stroke:#E65100,stroke-width:2px,color:#fff
+    style F fill:#D81B60,stroke:#AD1457,stroke-width:3px,color:#fff
+    style B1 fill:#546E7A,stroke:#37474F,stroke-width:2px,color:#fff
+    style C1 fill:#546E7A,stroke:#37474F,stroke-width:2px,color:#fff
+    style D1 fill:#546E7A,stroke:#37474F,stroke-width:2px,color:#fff
 ```
 
 **Threshold:** 3+ hops with 70% value retention per hop
@@ -317,18 +328,18 @@ graph TD
     
     M -.->|High Degree| C[⚠️ ALERT:<br/>Mixer Pattern]
     
-    style M fill:#E056FD,stroke:#862E9C,stroke-width:4px,color:#fff
-    style C fill:#FF6B6B,stroke:#C92A2A,stroke-width:3px,color:#fff
-    style A1 fill:#74C0FC,stroke:#1971C2
-    style A2 fill:#74C0FC,stroke:#1971C2
-    style A3 fill:#74C0FC,stroke:#1971C2
-    style A4 fill:#74C0FC,stroke:#1971C2
-    style A5 fill:#74C0FC,stroke:#1971C2
-    style B1 fill:#8CE99A,stroke:#2F9E44
-    style B2 fill:#8CE99A,stroke:#2F9E44
-    style B3 fill:#8CE99A,stroke:#2F9E44
-    style B4 fill:#8CE99A,stroke:#2F9E44
-    style B5 fill:#8CE99A,stroke:#2F9E44
+    style M fill:#7B1FA2,stroke:#4A148C,stroke-width:4px,color:#fff
+    style C fill:#C62828,stroke:#B71C1C,stroke-width:3px,color:#fff
+    style A1 fill:#1976D2,stroke:#0D47A1,stroke-width:2px,color:#fff
+    style A2 fill:#1976D2,stroke:#0D47A1,stroke-width:2px,color:#fff
+    style A3 fill:#1976D2,stroke:#0D47A1,stroke-width:2px,color:#fff
+    style A4 fill:#1976D2,stroke:#0D47A1,stroke-width:2px,color:#fff
+    style A5 fill:#1976D2,stroke:#0D47A1,stroke-width:2px,color:#fff
+    style B1 fill:#388E3C,stroke:#1B5E20,stroke-width:2px,color:#fff
+    style B2 fill:#388E3C,stroke:#1B5E20,stroke-width:2px,color:#fff
+    style B3 fill:#388E3C,stroke:#1B5E20,stroke-width:2px,color:#fff
+    style B4 fill:#388E3C,stroke:#1B5E20,stroke-width:2px,color:#fff
+    style B5 fill:#388E3C,stroke:#1B5E20,stroke-width:2px,color:#fff
 ```
 
 **Threshold:** Fan-in OR fan-out >= 20 addresses
@@ -1250,6 +1261,163 @@ Below are real graph visualizations from Neo4j Browser showing various AML detec
 *Transactions with suspiciously exact values (1.0, 5.0, 10.0 ETH) indicating potential structuring*
 
 </div>
+
+---
+
+## 🖼️ **Complete Screenshot Gallery - All Forensic Visualizations**
+
+Below are **ALL 24 Neo4j graph visualizations** from our Vitalik Buterin address analysis, showcasing different forensic techniques:
+
+<div align="center">
+
+### 🎯 **AML Detection Patterns**
+
+#### 🌀 **Mixer Detection - Connected Services**
+<img src="screenshots/Detect Mixers Connected to Target.png" width="100%" alt="Mixer detection showing connections to known mixing services"/>
+
+*Identifying addresses connected to Tornado Cash and other mixing services*
+
+---
+
+#### 💨 **Hot Potato Pattern - Rapid Transfers**
+<img src="screenshots/Hot Potato - Passing Quickly.png" width="100%" alt="Hot potato pattern showing rapid fund movement"/>
+
+*Detecting rapid successive transfers (high velocity money laundering technique)*
+
+---
+
+#### 🕸️ **Layering Network - Multiple Hops**
+<img src="screenshots/Layering Network - Multiple Layers.png" width="100%" alt="Multi-layer network showing complex layering patterns"/>
+
+*Visualizing complex layering schemes with 3+ levels of intermediaries*
+
+---
+
+#### 🌸 **Mandala Pattern - Circular Structures**
+<img src="screenshots/Mandala.png" width="100%" alt="Mandala-like circular transaction pattern"/>
+
+*Beautiful but suspicious: circular transaction patterns indicating potential wash trading*
+
+---
+
+### 💰 **Transaction Flow Analysis**
+
+#### 💸 **Money Flow - Largest Transactions**
+<img src="screenshots/ Money Flow - Largest Flows.png" width="100%" alt="Largest money flows visualization"/>
+
+*Top 50 highest-value transactions color-coded by amount*
+
+---
+
+#### 📍 **Follow the Money - 2 Levels Deep**
+<img src="screenshots/Follow the Money - 2 Levels.png" width="100%" alt="2-level deep transaction tracing"/>
+
+*Starting from target, expanding 2 levels to reveal network*
+
+---
+
+#### 📊 **Recent Activity Analysis**
+<img src="screenshots/Recent Activity.png" width="100%" alt="Most recent transactions"/>
+
+*Last 30 days of activity with timestamp clustering*
+
+---
+
+### 🎪 **Fraud & Manipulation Detection**
+
+#### 🎢 **Pump & Dump Pattern**
+<img src="screenshots/Pump & Dump Pattern.png" width="100%" alt="Pump and dump scheme detection"/>
+
+*Coordinated buying followed by mass sell-off pattern*
+
+---
+
+#### ☠️ **Taint Analysis - Contamination Tracking**
+<img src="screenshots/Taint Analysis - Contamination.png" width="100%" alt="Taint propagation from known bad actors"/>
+
+*Tracking fund contamination from sanctioned/hacked addresses*
+
+---
+
+#### ⚡ **Velocity Analysis - High Frequency**
+<img src="screenshots/Velocity Analysis - High Frequency.png" width="100%" alt="High-frequency transaction bursts"/>
+
+*Detecting abnormally high transaction frequency (bot activity)*
+
+---
+
+### 🔍 **Network Intelligence**
+
+#### ⭐ **Star Pattern - Hub Detection #1**
+<img src="screenshots/Star Pattern - Hub Detection.png" width="100%" alt="Hub detection showing central addresses"/>
+
+*Identifying hub addresses with 20+ connections (exchanges, mixers)*
+
+---
+
+#### ⭐ **Star Pattern - Hub Detection #2**
+<img src="screenshots/Star Pattern Hub Detection.png" width="100%" alt="Alternative hub visualization"/>
+
+*Alternative view: radial layout highlighting central nodes*
+
+---
+
+#### 🔗 **Top Connections Overview**
+<img src="screenshots/Top Connections.png" width="100%" alt="Top connected addresses"/>
+
+*Addresses ranked by connection count (degree centrality)*
+
+---
+
+#### 🔗 **Top Connections Detailed**
+<img src="screenshots/Top Connections Top Connections.png" width="100%" alt="Detailed top connections view"/>
+
+*Detailed view of most-connected addresses with labels*
+
+---
+
+### 🕵️ **Advanced Forensics**
+
+#### 🔺 **Triangulation - Who Knows Who**
+<img src="screenshots/Triangulation - Who Knows Who.png" width="100%" alt="Triangulation analysis"/>
+
+*Finding common intermediaries between two suspects (A and B both know C)*
+
+---
+
+#### 🔺 **Triangulation Patterns**
+<img src="screenshots/Triangulation Who Knows Who.png" width="100%" alt="Alternative triangulation view"/>
+
+*Alternative triangulation: discovering hidden relationships*
+
+---
+
+#### 🕐 **Time-Based Clustering**
+<img src="screenshots/Time-Based Clustering - Coordinated Transactions.png" width="100%" alt="Time clustering showing coordinated activity"/>
+
+*Transactions clustered by timestamp revealing coordinated operations*
+
+---
+
+#### 🐋 **Whale Surveillance - Big Player Movements**
+<img src="screenshots/Whale Surveillance - Big Player Movements.png" width="100%" alt="Whale transaction monitoring"/>
+
+*Tracking large holders (whales) and their transaction patterns*
+
+---
+
+</div>
+
+### 📊 **Visualization Summary**
+
+| Category | Visualizations | Focus |
+|----------|---------------|-------|
+| **🌀 AML Patterns** | 4 visuals | Mixers, layering, circularity, hot potato |
+| **💰 Flow Analysis** | 3 visuals | Money flow, tracing, recent activity |
+| **🎪 Fraud Detection** | 3 visuals | Pump & dump, taint, velocity |
+| **🔍 Network Intel** | 4 visuals | Hubs, top connections, centrality |
+| **🕵️ Advanced** | 4 visuals | Triangulation, time clustering, whales |
+| **📊 TOTAL** | **18 unique techniques** | Complete forensic toolkit |
 
 ---
 
