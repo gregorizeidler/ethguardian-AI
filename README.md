@@ -43,6 +43,7 @@
 - [⚡ Quick Start](#-quick-start)
 - [📚 API Documentation](#-api-documentation)
 - [💡 Usage Examples](#-usage-examples)
+- [💻 Frontend Application Interface](#-frontend-application-interface)
 - [🕸️ Graph Visualizations & Neo4j Queries](#️-graph-visualizations--neo4j-queries)
 - [🛠️ Technology Stack](#-technology-stack)
 - [📁 Project Structure](#-project-structure)
@@ -1190,6 +1191,81 @@ curl -X POST http://localhost:8001/api/automation/expansion \
 # Get complete investigation tree
 curl http://localhost:8001/api/automation/jobs/{job_id}
 ```
+
+---
+
+## 💻 Frontend Application Interface
+
+**EthGuardian AI** features a modern, intuitive web interface built with React that provides real-time blockchain forensics capabilities. The application includes multiple specialized tabs for comprehensive address investigation.
+
+### 🎨 **Application Views**
+
+<div align="center">
+
+---
+
+#### 🔍 **Investigation Tab - Graph Visualization**
+<img src="screenshots/frontend-investigation-graph.png" width="100%" alt="Investigation Tab - Interactive Graph Visualization"/>
+
+*Real-time force-directed graph visualization with:*
+- 🎯 **Address Profile**: Risk score, transaction volume, PageRank metrics
+- 🌐 **Interactive Network Graph**: Drag nodes, zoom, explore connections
+- 🚨 **Live Alerts**: Real-time AML pattern detection (Peel Chain, Mixer, Circularity)
+- 🎨 **Risk-Based Coloring**: Nodes colored by risk level (green → yellow → red)
+- 📊 **Network Statistics**: Track nodes, links, and graph metrics
+
+---
+
+#### 📊 **Dashboard Tab - Analytics Overview**
+<img src="screenshots/frontend-dashboard-alerts.png" width="100%" alt="Dashboard Tab - Risk Analytics"/>
+
+*Comprehensive alert dashboard featuring:*
+- 📈 **Total Alerts**: System-wide alert count
+- 🔴 **High Risk Alerts**: Critical threats (score > 70)
+- 🟠 **Medium Risk Alerts**: Moderate concerns (score 50-70)
+- 🟢 **Low Risk Alerts**: Minor flags (score < 50)
+- ⚡ **Real-Time Updates**: Auto-refresh for continuous monitoring
+
+---
+
+#### 🚨 **Fraud Detection Tab - Threat Analysis**
+<img src="screenshots/frontend-fraud-detection.png" width="100%" alt="Fraud Detection Tab"/>
+
+*Advanced fraud detection capabilities:*
+- 💸 **Rug Pull Detection**: DeFi scam pattern analysis
+- 🔺 **Ponzi Scheme Detection**: Circular fund flow identification
+- 🎣 **Phishing Detection**: Malicious wallet identification
+- 🤖 **MEV Bot Detection**: Front-running bot analysis
+- 📋 **Detailed Reports**: Risk scores, explanations, and recommendations
+
+---
+
+#### 🤖 **Automation Panel - Autonomous Operations**
+<img src="screenshots/frontend-automation-panel.png" width="100%" alt="Automation Panel - Crawler, Monitor, Expansion"/>
+
+*Three automation modes for autonomous investigation:*
+- 🕷️ **Blockchain Crawler**: BFS/DFS exploration from seed addresses
+- 🔍 **Real-Time Monitor**: Continuous blockchain surveillance
+- 🔄 **Auto-Expansion**: Automatic network discovery for high-risk addresses
+- 📊 **Job Management**: Track running jobs, view status, cancel operations
+- ⚙️ **Configurable Parameters**: Depth, thresholds, limits, and intervals
+
+---
+
+</div>
+
+### 🎯 **Key Frontend Features**
+
+| 🔧 Feature | 📝 Description |
+|-----------|---------------|
+| **🔍 Address Search** | Investigate any Ethereum address instantly |
+| **📊 Multi-Tab Interface** | Investigation, Dashboard, Patterns, Fraud tabs |
+| **🎨 Interactive Graphs** | Force-directed visualization with react-force-graph |
+| **🚨 Alert Sidebar** | Real-time alerts with risk scores |
+| **🤖 Automation Controls** | Start/stop crawler, monitor, and expansion jobs |
+| **📈 Live Metrics** | Transaction counts, risk scores, network stats |
+| **🎯 Risk-Based Styling** | Color-coded visualization by threat level |
+| **⚡ Real-Time Updates** | Auto-refresh for jobs and alerts |
 
 ---
 
